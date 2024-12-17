@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
-import { Mic, Volume2, Globe } from "lucide-react";
+import { Mic, Volume2, FileVolumeIcon } from "lucide-react";
 import Image from "next/image";
 
 // Expanded list of languages with ISO codes for each language
@@ -85,7 +85,7 @@ export default function Translate() {
       {/* Header */}
       <header className="flex items-center justify-between p-4 border-b dark:border-gray-700">
         <div className="flex items-center gap-2">
-          <Globe className="w-6 h-6 text-blue-500" />
+          <FileVolumeIcon className="w-6 h-6 text-blue-500" />
           <span className="text-xl font-normal">Voice Stream</span>
         </div>
         <div className="flex items-center gap-2">
@@ -103,7 +103,9 @@ export default function Translate() {
         <Image
           src="/text-to-speech.png" // Replace with your image source
           alt="Translate"
-          className="w-20 h-20 mb-4 animate-pulse"
+          className="mb-4"
+          width={70}
+          height={70}
         />
 
         {/* Left Section */}

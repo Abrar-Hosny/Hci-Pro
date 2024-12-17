@@ -1,7 +1,8 @@
+export {};
+
 declare global {
-    interface Window {
-      SpeechRecognition: any;
-      webkitSpeechRecognition: any;
-    }
+  interface Window {
+    SpeechRecognition: typeof SpeechRecognition;
+    webkitSpeechRecognition: typeof SpeechRecognition;
   }
-  
+}
