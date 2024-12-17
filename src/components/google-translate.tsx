@@ -11,8 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
-import { Menu, Mic, Volume2, Globe } from "lucide-react";
-import axios from "axios";
+import { Mic, Volume2, Globe } from "lucide-react";
 
 // Expanded list of languages with ISO codes for each language
 const languages = [
