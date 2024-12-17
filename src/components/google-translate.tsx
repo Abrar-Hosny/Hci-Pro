@@ -85,7 +85,7 @@ export default function Translate() {
       <header className="flex items-center justify-between p-4 border-b dark:border-gray-700">
         <div className="flex items-center gap-2">
           <Globe className="w-6 h-6 text-blue-500" />
-          <span className="text-xl font-normal">Translate</span>
+          <span className="text-xl font-normal">Voice Stream</span>
         </div>
         <div className="flex items-center gap-2">
           <Switch
