@@ -12,6 +12,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
 import { Mic, Volume2, Globe } from "lucide-react";
+import Image from "next/image";
 
 // Expanded list of languages with ISO codes for each language
 const languages = [
@@ -98,7 +99,7 @@ export default function Translate() {
       {/* Main Content */}
       <main className="p-4 flex flex-col items-center">
         {/* Center Image */}
-        <img
+        <Image
           src="/text-to-speech.png" // Replace with your image source
           alt="Translate"
           className="w-20 h-20 mb-4 animate-pulse"
