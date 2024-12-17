@@ -45,10 +45,11 @@ export default function Translate() {
   // Speech-to-Text
   const handleSpeechToText = () => {
     const SpeechRecognition =
-      window.SpeechRecognition || (window as any).webkitSpeechRecognition;
+      window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition)
       return alert("Speech Recognition not supported in this browser.");
-
+  
+  
     const recognition = new SpeechRecognition();
     recognition.lang = sourceLanguage; // Set language
     recognition.interimResults = false;
